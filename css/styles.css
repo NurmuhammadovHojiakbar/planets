@@ -88,6 +88,9 @@ body{
 }
 
 .logos-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-right: 25px;
 }
 
@@ -114,6 +117,18 @@ body{
 }
 .nav-tab__active{
     opacity: 1;
+}
+.site-logo{
+    margin-right: 25px;
+}
+.nav-logo{
+    display: none;
+    width: 24px;
+    height: 17px;
+    background: transparent url("../img/nav.svg") no-repeat center center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
 }
 /* MAIN  */
 .main{
@@ -264,5 +279,7 @@ body{
 }
 
 @media (max-width: 800px){
-
+    .nav-logo{
+        display: block;
+    }
 }
