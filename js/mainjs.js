@@ -41,9 +41,9 @@ Vue.component("full-site",{
                     
                     <section class="main-about">
                         <ul class="about-list">
-                            <li class="about-item">
-                                <p class="about-title">drsrhghfth</p>
-                                <p class="about-caption">565</p>
+                            <li class="about-item" v-for="aboutTitle in aboutList">
+                                <p class="about-title">{{ aboutTitle }}</p>
+                                <p class="about-caption">{{ planets[selectedPlanet].about[aboutTitle] }}</p>
                             </li>
                         </ul>
                     </section>
@@ -53,6 +53,7 @@ Vue.component("full-site",{
     `,
     data(){
         return {
+            aboutList:["rotation time","revolution time","radius","average temp"],
             buttonList:["overview","internal structure","surface geology"],
             planetsList: ["Mercuriy","Venus","Earth","Mars","Jupiter","Saturn","Uranus","Neptune"],
             planets: {
@@ -72,6 +73,12 @@ Vue.component("full-site",{
                         text: "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.",
                         img: "img/mercuriy-geo.png"
                     },
+                    about:{
+                        "rotation time": "58.6 days",
+                        "revolution time": "87.97 days",
+                        "radius":"2,439.7 km",
+                        "average temp":"430°c",
+                    },                    
                 },
                 "Venus": {
                     name:"Venus",
@@ -88,6 +95,12 @@ Vue.component("full-site",{
                     "surface geology": {
                         text: "Much of the Venusian surface appears to have been shaped by volcanic activity. Venus has several times as many volcanoes as Earth, and it has 167 large volcanoes that are over 100 km (60 mi) across. The only volcanic complex of this size on Earth is the Big Island of Hawaii.",
                         img: "img/venus-geo.png"
+                    },
+                    about:{
+                        "rotation time": "243 days",
+                        "revolution time": "224.7 days",
+                        "radius":"6,051.8 km",
+                        "average temp":"471°c",
                     },
                 },
                 "Earth": {
@@ -106,6 +119,12 @@ Vue.component("full-site",{
                         text: "The total surface area of Earth is about 510 million km2. The continental crust consists of lower density material such as the igneous rocks granite and andesite. Less common is basalt, a denser volcanic rock that is the primary constituent of the ocean floors.",
                         img: "img/earth-geo.png"
                     },
+                    about:{
+                        "rotation time": "0.99 days",
+                        "revolution time": "365.26 days",
+                        "radius":"6,371 km",
+                        "average temp":"16°c",
+                    },
                 },
                 "Mars": {
                     name:"Mars",
@@ -122,6 +141,12 @@ Vue.component("full-site",{
                     "surface geology": {
                         text: "Mars is a terrestrial planet whose surface consists of minerals containing silicon and oxygen, metals, and other elements that typically make up rock. The surface is primarily composed of tholeiitic basalt, although parts are more silica-rich than typical basalt.",
                         img: "img/mars-geo.png"
+                    },
+                    about:{
+                        "rotation time": "1.03 days",
+                        "revolution time": "1.88 years",
+                        "radius":"3,389.5 km",
+                        "average temp":"−28°c",
                     },
                 },
                 "Jupiter": {
@@ -140,6 +165,12 @@ Vue.component("full-site",{
                         text: "The best known feature of Jupiter is the Great Red Spot, a persistent anticyclonic storm located 22° south of the equator. It is known to have existed since at least 1831, and possibly since 1665.",
                         img: "img/jupiter-geo.png"
                     },
+                    about:{
+                        "rotation time": "9.93 hours",
+                        "revolution time": "11.86 years",
+                        "radius":"69,911 km",
+                        "average temp":"-108°c",
+                    },
                 },
                 "Saturn": {
                     name:"Saturn",
@@ -156,6 +187,12 @@ Vue.component("full-site",{
                     "surface geology": {
                         text: "The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% helium by volume. The planet's most famous feature is its prominent ring system, which is composed mostly of ice particles with a smaller amount of rocky debris and dust.",
                         img: "img/saturn-geo.png"
+                    },
+                    about:{
+                        "rotation time": "10.8 hours",
+                        "revolution time": "29.46 years",
+                        "radius":"58,232 km",
+                        "average temp":"-138°c",
                     },
                 },
                 "Uranus": {
@@ -174,6 +211,12 @@ Vue.component("full-site",{
                         text: "The composition of Uranus's atmosphere is different from its bulk, consisting mainly of molecular hydrogen and helium. The helium molar fraction, i.e. the number of helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere.",
                         img: "img/uranus-geo.png"
                     },
+                    about:{
+                        "rotation time": "17.2 hours",
+                        "revolution time": "84 years",
+                        "radius":"25,362 km",
+                        "average temp":"-195°c",
+                    },
                 },
                 "Neptune": {
                     name:"Neptune",
@@ -190,6 +233,12 @@ Vue.component("full-site",{
                     "surface geology": {
                         text: "Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum.",
                         img: "img/neptune-geo.png"
+                    },
+                    about:{
+                        "rotation time": "16.08 hours",
+                        "revolution time": "164.79 years",
+                        "radius":"24,622 km",
+                        "average temp":"-201°c",
                     },
                 },
             },
