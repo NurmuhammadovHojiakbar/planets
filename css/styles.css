@@ -6,40 +6,40 @@
 /* Fonts  */
 @font-face {
     font-family: "Antonio";
-    src: url("Antonio-Bold.woff2") format("woff2"),
-        url("Antonio-Bold.woff") format("woff");
+    src: url("../fonts/Antonio-Bold.woff2") format("woff2"),
+        url("../fonts/Antonio-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "Antonio";
-    src: url("Antonio-Regular.woff2") format("woff2"),
-        url("Antonio-Regular.woff") format("woff");
+    src: url("../fonts/Antonio-Regular.woff2") format("woff2"),
+        url("../fonts/Antonio-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "Spartan";
-    src: url("Spartan-Bold.woff2") format("woff2"),
-        url("Spartan-Bold.woff") format("woff");
+    src: url("../fonts/Spartan-Bold.woff2") format("woff2"),
+        url("../fonts/Spartan-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "Spartan";
-    src: url("Spartan-SemiBold.woff2") format("woff2"),
-        url("Spartan-SemiBold.woff") format("woff");
+    src: url("../fonts/Spartan-SemiBold.woff2") format("woff2"),
+        url("../fonts/Spartan-SemiBold.woff") format("woff");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "Spartan";
-    src: url("Spartan-Medium.woff2") format("woff2"),
-        url("Spartan-Medium.woff") format("woff");
+    src: url("../fonts/Spartan-Medium.woff2") format("woff2"),
+        url("../fonts/Spartan-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
