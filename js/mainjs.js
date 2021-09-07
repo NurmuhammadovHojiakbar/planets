@@ -7,6 +7,7 @@ Vue.component("full-site",{
                         <a class="logo site-logo" href="index.html">
                             <img class="logo-img" src="img/logo.svg" alt="Site Logo" width="110" height="36">
                         </a>
+                        <button class="nav-logo"><button>
                     </div>
                     
                     <nav class="nav">
