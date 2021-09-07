@@ -7,13 +7,13 @@ Vue.component("full-site",{
                         <a class="logo site-logo" href="index.html">
                             <img class="logo-img" src="img/logo.svg" alt="Site Logo" width="110" height="36">
                         </a>
-                        <button class="nav-logo"></button>
+                        <button class="nav-logo" @click="showNav = !showNav"></button>
                     </div>
                     
-                    <nav class="nav">
+                    <nav class="nav" :class="{'show-nav': showNav}">
                         <ul class="nav-list">
                             <li class="nav-item" v-for="planet in planetsList">
-                                <span class="nav-tab" @click="selectedPlanet = planet" :class="{'nav-tab__active': selectedPlanet === planet}" :style="[selectedPlanet === planet? {'color': planets[planet].backgroundColor}: {color: '#fff'}]"><div class="nav-tab__color" :style="{'background-color': planets[planet].backgroundColor}"></div>{{ planet }}</span>
+                                <span class="nav-tab" @click="[selectedPlanet = planet, showNav = !showNav]" :class="{'nav-tab__active': selectedPlanet === planet}" :style="[selectedPlanet === planet? {'color': planets[planet].backgroundColor}: {color: '#fff'}]"><div class="nav-tab__color" :style="{'background-color': planets[planet].backgroundColor}"></div>{{ planet }}</span>
                             </li>
                         </ul>
                     </nav>
@@ -245,11 +245,9 @@ Vue.component("full-site",{
             },
             selectedPlanet: "Mercuriy",
             selectedButton:"overview",
+            showNav: false,
         }
     },
-    methods:{
-        
-    }
 })
 
 const app = new Vue({

@@ -333,6 +333,10 @@ body{
         height: 100vh;
         padding: 105px 25px 25px;
         z-index: 76;
+        transition: 0.3s ease;
+    }
+    .show-nav{
+        left: 0;
     }
     .nav-list{
         flex-direction: column;
