@@ -24,7 +24,7 @@ Vue.component("full-site",{
                 <div class="main-container">
                     <section class="main-info">
                         <div class="main-info__image-wrapper">
-                            <img class="planet-img" :src="planets[selectedPlanet][selectedButton].img" alt="Mercuriy">
+                            <img class="planet-img" data-aos="fade-up-right" data-aos-duration="2000" :src="planets[selectedPlanet][selectedButton].img" alt="Mercuriy">
                         </div>
 
                         <div class="main-info__container">
@@ -255,3 +255,5 @@ Vue.component("full-site",{
 const app = new Vue({
     el: "#app",
 })
+
+AOS.init();

@@ -316,9 +316,6 @@ body{
         padding: 105px 25px 25px;
         z-index: 76;
     }
-    .nav-show{
-        left: 0;
-    }
     .nav-list{
         flex-direction: column;
         margin-left: 0;
