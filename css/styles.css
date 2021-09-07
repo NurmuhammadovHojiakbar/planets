@@ -1,0 +1,335 @@
+:root {
+    --Antonio: "Antonio","Arial", sans-serif;
+    --Spartan: "Spartan","Arial", sans-serif;
+}
+
+/* Fonts  */
+@font-face {
+    font-family: "Antonio";
+    src: url("Antonio-Bold.woff2") format("woff2"),
+        url("Antonio-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Antonio";
+    src: url("Antonio-Thin.woff2") format("woff2"),
+        url("Antonio-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Antonio";
+    src: url("Antonio-SemiBold.woff2") format("woff2"),
+        url("Antonio-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Antonio";
+    src: url("Antonio-Light.woff2") format("woff2"),
+        url("Antonio-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Antonio";
+    src: url("Antonio-Medium.woff2") format("woff2"),
+        url("Antonio-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Antonio";
+    src: url("Antonio-Regular.woff2") format("woff2"),
+        url("Antonio-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Antonio";
+    src: url("Antonio-ExtraLight.woff2") format("woff2"),
+        url("Antonio-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Spartan";
+    src: url("Spartan-ExtraBold.woff2") format("woff2"),
+        url("Spartan-ExtraBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Spartan";
+    src: url("Spartan-Bold.woff2") format("woff2"),
+        url("Spartan-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Spartan";
+    src: url("Spartan-ExtraLight.woff2") format("woff2"),
+        url("Spartan-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Spartan";
+    src: url("Spartan-Regular.woff2") format("woff2"),
+        url("Spartan-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Spartan";
+    src: url("Spartan-SemiBold.woff2") format("woff2"),
+        url("Spartan-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Spartan";
+    src: url("Spartan-Light.woff2") format("woff2"),
+        url("Spartan-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Spartan";
+    src: url("Spartan-Black.woff2") format("woff2"),
+        url("Spartan-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Spartan";
+    src: url("Spartan-Thin.woff2") format("woff2"),
+        url("Spartan-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Spartan";
+    src: url("Spartan-Medium.woff2") format("woff2"),
+        url("Spartan-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--Spartan);
+    margin: 0;
+    padding: 0;
+    background: #070724 url("../img/bg-image.png") no-repeat center center;
+    background-size: cover;
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+}
+
+
+
+/* HEADER  */
+.site-header{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.site-header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1350px;
+    padding: 20px 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logos-container{
+    margin-right: 25px;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-left: -33px;
+}
+
+.nav-item{
+    margin-left: 33px;
+}
+
+.nav-tab{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 25px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+.nav-tab__active{
+    opacity: 1;
+}
+/* MAIN  */
+.main{
+    padding: 100px 25px 40px;
+}
+.main-container{
+    width: 100%;
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-info{
+    display: flex;
+    margin-bottom: 70px;
+}
+.main-info__image-wrapper{
+    flex-grow: 1;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-info__container{
+    width: 350px;
+}
+.text-wrapper{
+    margin-bottom: 40px;
+}
+.main-info__title{
+    font-family: var(--Antonio);
+    font-size: 80px;
+    line-height: 103px;
+    margin-top: 0;
+    margin-bottom: 23px;
+}
+.site-paragraph{
+    opacity: 0.8;
+    margin-top: 0;
+    margin-bottom: 23px;
+}
+
+.source-text{
+    opacity: 0.5;
+}
+
+.source-text a{
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.source-text a::after{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: url("../img/wikipedia.png") no-repeat center center;
+    background-size: contain;
+    margin-left: 5px;
+}
+
+.buttons-list{
+    margin: 0 0 -16px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.button-item{
+    cursor: pointer;
+    width: 100%;
+    padding: 12px 25px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 25px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+.button-item:hover{
+    background-color: rgba(216, 216, 216, 0.2);
+}
+.button-item span{
+    opacity: 0.5;
+    margin-right: 25px;
+}
+
+.about-list{
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-item{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 255px;
+    padding: 20px 23px;
+}
+
+.about-title{
+    font-weight: bold;
+    opacity: 0.5;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.about-caption{
+    font-family: var(--Antonio);
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
