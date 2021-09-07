@@ -34,7 +34,7 @@ Vue.component("full-site",{
                             </div>
 
                             <ul class="buttons-list">
-                                <li class="button-item" v-for="button in buttonList" @click="selectedButton = button" :style="[selectedButton === button ? {'background-color': planets[selectedPlanet].backgroundColor} : {'background-color': transparent}]"><span>01</span> {{button}}</li>
+                                <li class="button-item" v-for="(button,index) in buttonList" @click="selectedButton = button" :style="[selectedButton === button ? {'background-color': planets[selectedPlanet].backgroundColor} : {'background-color': transparent}]"><span>0{{ index + 1 }}</span> {{button}}</li>
                             </ul>
                         </div>
                     </section>
