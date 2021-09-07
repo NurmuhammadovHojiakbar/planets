@@ -13,7 +13,7 @@ Vue.component("full-site",{
                     <nav class="nav">
                         <ul class="nav-list">
                             <li class="nav-item" v-for="planet in planetsList">
-                                <span class="nav-tab" @click="selectedPlanet = planet" :class="{'nav-tab__active': selectedPlanet === planet}">{{ planet }}</span>
+                                <span class="nav-tab" @click="selectedPlanet = planet" :class="{'nav-tab__active': selectedPlanet === planet}"><div class="nav-tab__color" :style="{'background-color': planets[planet].backgroundColor}"></div>{{ planet }}</span>
                             </li>
                         </ul>
                     </nav>
@@ -246,6 +246,9 @@ Vue.component("full-site",{
             selectedPlanet: "Mercuriy",
             selectedButton:"overview",
         }
+    },
+    methods:{
+        
     }
 })
 
